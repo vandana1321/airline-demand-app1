@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airline Passenger Demand Forecasting</title>
+</head>
+<body>
+    <h2>Enter Passenger Count</h2>
+    <form method="POST">
+        <input type="number" name="passengers" placeholder="Enter passengers" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Demand: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
